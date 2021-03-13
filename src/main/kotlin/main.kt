@@ -14,6 +14,4 @@ fun main() {
 
     println("${Dlugosc.fromCentymeters(200_000.0).toKilometers()}")
 
-
-
 }

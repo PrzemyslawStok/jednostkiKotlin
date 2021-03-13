@@ -18,14 +18,13 @@ class Dlugosc(var dlugoscMetry: Double) {
         return dlugoscMetry * 0.001
     }
 
-    fun toMilimeters():Double{
-        return 0.0
+    fun toMilimeters(): Double {
+        return dlugoscMetry * 1000
     }
 
-    fun toCentymeters():Double{
-        return 0.0
+    fun toCentymeters(): Double {
+        return dlugoscMetry * 100
     }
-
 
     fun print() {
         println("Dlugość wynosi: ${dlugoscMetry}[m]")
