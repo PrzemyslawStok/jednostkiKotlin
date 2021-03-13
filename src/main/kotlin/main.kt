@@ -7,9 +7,13 @@ fun main() {
 
     dlugosc1.print()
 
-
-    val dlugosc2 = Dlugosc.fromMilimeters(10.0)
-
+    val dlugosc2 = Dlugosc.fromCentymeters(10.0)
     dlugosc2.print()
+
+    println("dlogosc2 ${dlugosc2.toKilometers()} [km]")
+
+    println("${Dlugosc.fromCentymeters(200_000.0).toKilometers()}")
+
+
 
 }
