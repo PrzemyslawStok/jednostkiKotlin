@@ -17,4 +17,7 @@ fun main() {
     Dlugosc.fromCentymeters(100.0).printMilimeters()
     Dlugosc.fromCentymeters(100.0).print()
 
+    val czas0 = Czas(10.0)
+    czas0.print()
+
 }
