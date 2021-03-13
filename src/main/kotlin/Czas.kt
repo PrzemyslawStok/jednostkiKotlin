@@ -5,15 +5,15 @@ class Czas(var czasSekundy: Double) {
         }
     }
 
-    fun toMinutes():Double{
-        return 0.0
+    fun toMinutes(): Double {
+        return czasSekundy / 60
     }
 
-    fun printMinutes(){
+    fun printMinutes() {
         println("Czas wynosi: ${toMinutes()} [m]")
     }
 
-    fun print(){
+    fun print() {
         println("Czas wynosi: ${czasSekundy} [s]")
     }
 }
