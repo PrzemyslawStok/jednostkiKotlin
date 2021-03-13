@@ -38,6 +38,10 @@ class Dlugosc(var dlugoscMetry: Double) {
         println("Dlugość wynosi: ${toCentymeters()}[cm]")
     }
 
+    fun printMeters(){
+        print()
+    }
+
     fun print() {
         println("Dlugość wynosi: ${dlugoscMetry}[m]")
     }
