@@ -14,4 +14,7 @@ fun main() {
 
     println("${Dlugosc.fromCentymeters(2.0).toMilimeters()}")
 
+    Dlugosc.fromCentymeters(100.0).printMilimeters()
+    Dlugosc.fromCentymeters(100.0).print()
+
 }

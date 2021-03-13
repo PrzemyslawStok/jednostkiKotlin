@@ -30,7 +30,7 @@ class Dlugosc(var dlugoscMetry: Double) {
         println("Dlugość wynosi: ${toKilometers()}[km]")
     }
 
-    fun printMilimaters(){
+    fun printMilimeters(){
         println("Dlugość wynosi: ${toMilimeters()}[mm]")
     }
 
