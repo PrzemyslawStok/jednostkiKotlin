@@ -20,4 +20,5 @@ fun main() {
     val czas0 = Czas(10.0)
     czas0.print()
 
+    Czas.fromMinutes(10.0).print()
 }
