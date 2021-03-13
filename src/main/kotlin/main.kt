@@ -12,6 +12,6 @@ fun main() {
 
     println("dlogosc2 ${dlugosc2.toKilometers()} [km]")
 
-    println("${Dlugosc.fromCentymeters(200_000.0).toKilometers()}")
+    println("${Dlugosc.fromCentymeters(2.0).toMilimeters()}")
 
 }

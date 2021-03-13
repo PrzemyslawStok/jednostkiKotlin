@@ -26,6 +26,18 @@ class Dlugosc(var dlugoscMetry: Double) {
         return dlugoscMetry * 100
     }
 
+    fun printKilometers(){
+        println("Dlugość wynosi: ${toKilometers()}[km]")
+    }
+
+    fun printMilimaters(){
+        println("Dlugość wynosi: ${toMilimeters()}[mm]")
+    }
+
+    fun printCentymeters(){
+        println("Dlugość wynosi: ${toCentymeters()}[cm]")
+    }
+
     fun print() {
         println("Dlugość wynosi: ${dlugoscMetry}[m]")
     }
