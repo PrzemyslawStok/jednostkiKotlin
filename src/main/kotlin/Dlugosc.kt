@@ -2,7 +2,7 @@ class Dlugosc(var dlugoscMetry: Double) {
      enum class Jednostka(val mnoznik: Double) {
         MILIMETR(0.001),
         CENTYMETR(0.01),
-        METRY(1.0),
+        METR(1.0),
         KILOMETR(1000.0)
     }
 
@@ -54,6 +54,15 @@ class Dlugosc(var dlugoscMetry: Double) {
 
     fun print() {
         println("Dlugość wynosi: ${dlugoscMetry}[m]")
+    }
+
+    fun print(jednostka: Jednostka){
+        when(jednostka){
+            Jednostka.MILIMETR->printMilimeters()
+            Jednostka.CENTYMETR->printCentymeters()
+            Jednostka.METR->printMeters()
+            Jednostka.KILOMETR->printKilometers()
+        }
     }
 
 }
