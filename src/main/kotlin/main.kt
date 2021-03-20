@@ -22,4 +22,6 @@ fun main() {
 
     Czas.fromMinutes(10.0).print()
 
+    Dlugosc.fromUnit(5.0,Dlugosc.Jednostka.CENTYMETR).print()
+
 }

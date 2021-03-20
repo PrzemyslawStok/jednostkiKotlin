@@ -1,9 +1,9 @@
 class Dlugosc(var dlugoscMetry: Double) {
-    enum class Jednostka(val mnoznik: Double) {
-        MILIMETRY(0.001),
-        CENTYMETRY(0.01),
+     enum class Jednostka(val mnoznik: Double) {
+        MILIMETR(0.001),
+        CENTYMETR(0.01),
         METRY(1.0),
-        KILOMETRY(1000.0)
+        KILOMETR(1000.0)
     }
 
     companion object {
@@ -17,6 +17,10 @@ class Dlugosc(var dlugoscMetry: Double) {
 
         fun fromCentymeters(dlugoscCentymetry: Double): Dlugosc {
             return Dlugosc(dlugoscCentymetry * 0.01)
+        }
+
+        fun fromUnit(dlugosc: Double, jednostka: Dlugosc.Jednostka): Dlugosc {
+            return Dlugosc(dlugosc * jednostka.mnoznik)
         }
     }
 
@@ -32,19 +36,19 @@ class Dlugosc(var dlugoscMetry: Double) {
         return dlugoscMetry * 100
     }
 
-    fun printKilometers(){
+    fun printKilometers() {
         println("Dlugość wynosi: ${toKilometers()}[km]")
     }
 
-    fun printMilimeters(){
+    fun printMilimeters() {
         println("Dlugość wynosi: ${toMilimeters()}[mm]")
     }
 
-    fun printCentymeters(){
+    fun printCentymeters() {
         println("Dlugość wynosi: ${toCentymeters()}[cm]")
     }
 
-    fun printMeters(){
+    fun printMeters() {
         print()
     }
 
