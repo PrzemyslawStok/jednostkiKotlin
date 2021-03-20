@@ -21,4 +21,5 @@ fun main() {
     czas0.print()
 
     Czas.fromMinutes(10.0).print()
+
 }

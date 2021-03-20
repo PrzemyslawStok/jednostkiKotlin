@@ -1,4 +1,10 @@
 class Dlugosc(var dlugoscMetry: Double) {
+    enum class Jednostka(val mnoznik: Double) {
+        MILIMETRY(0.001),
+        CENTYMETRY(0.01),
+        METRY(1.0),
+        KILOMETRY(1000.0)
+    }
 
     companion object {
         fun fromKilometers(dlugoscKilometry: Double): Dlugosc {
